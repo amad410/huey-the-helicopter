@@ -1,6 +1,7 @@
 import React from 'react';
 import { BookOpen, Brain, Heart, Users, Star, Sparkles } from 'lucide-react';
 import logo from './images/logo.png';
+import happyParent from './images/happy_parent.jpg';
 
 interface BenefitProps {
   icon: React.ReactNode;
@@ -87,7 +88,7 @@ const Benefits: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/3 mb-6 md:mb-0 md:mr-10">
               <img 
-                src="https://images.unsplash.com/photo-1629196914168-3a2652305f9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
+                src={happyParent} 
                 alt="Happy child reading" 
                 className="rounded-lg shadow-md"
               />

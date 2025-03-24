@@ -2,11 +2,13 @@ import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
-import Products from './components/Products';
+// import Products from './components/Products';
 import Benefits from './components/Benefits';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import SubscriptionPopup from './components/SubscriptionPopup';
+import CallToAction from './components/CallToAction';
+import BonusSection from './components/BonusSection';
 
 function App() {
   const [showPopup, setShowPopup] = useState(false);
@@ -33,8 +35,10 @@ function App() {
       <main className="flex-grow">
         <Hero />
         <About />
-        <Products />
+    {/* <Products /> */}
         <Benefits />
+        <CallToAction />
+        <BonusSection />
         <ContactSection />
       </main>
       <Footer />
