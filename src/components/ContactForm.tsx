@@ -29,15 +29,9 @@ const ContactForm: React.FC = () => {
           name="contact"
           method="POST"
           data-netlify="true"
-          netlify-honeypot="bot-field"
         >
           {/* Hidden input for Netlify */}
           <input type="hidden" name="form-name" value="contact" />
-          <div className="hidden">
-            <label>
-              Don't fill this out if you're human: <input name="bot-field" />
-            </label>
-          </div>
 
           <div className="space-y-6">
             <div>

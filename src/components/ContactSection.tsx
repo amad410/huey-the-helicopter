@@ -39,16 +39,10 @@ const ContactSection: React.FC = () => {
                 name="contact-section"
                 method="POST"
                 data-netlify="true"
-                netlify-honeypot="bot-field"
               >
                 {/* Hidden input for Netlify */}
                 <input type="hidden" name="form-name" value="contact-section" />
-                <div className="hidden">
-                  <label>
-                    Don't fill this out if you're human: <input name="bot-field" />
-                  </label>
-                </div>
-
+                
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
                   <input
